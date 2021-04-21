@@ -1,0 +1,62 @@
+package revisi;
+
+public class MatematikaBeraksi {
+    public static void main (String []args){
+        Matematika mtkku = new Matematika();
+        mtkku.pertambahan(20, 20);
+        mtkku.pengurangan(10, 5);
+        mtkku.perkalian(10, 20);
+        mtkku.pembagian(20, 2);
+        mtkku.pertambahan(12.5, 28.7, 14.2);
+        mtkku.pertambahan(12, 28, 14);
+        mtkku.pertambahan(23,24);
+        mtkku.pertambahan(3.4, 4.9);
+       
+    }
+}
+
+
+
+package revisi;
+
+public class MatematikaCanggih extends Matematika {
+    void modulus(int a, int b){
+        int hasil = a%b;
+        System.out.println("Modulus :" + hasil);
+    }
+    void modulus(double a, double b, double c){
+        double hasil = a%b%c;
+        System.out.println("Modulus ;"+ hasil);
+    }
+}
+
+
+
+package revisi;
+
+public class MatematikaCanggihBanget extends MatematikaCanggih {
+    void PertambahanTiga(int a, int b, int c){
+        int hasil = a+b+c;
+        System.out.println("Pertambahan tiga = "+ hasil);
+    }
+    void PertambahanEmpat(int a, int b, int c, int d){
+        int hasil = a+b+c+d;
+        System.out.println("Pertambahan Empat = "+ hasil);
+    }
+    
+}
+
+
+
+package revisi;
+
+public class MatematikaCanggihBangetBeraksi {
+    public static void main (String [] args){
+        MatematikaCanggihBanget mtkku = new MatematikaCanggihBanget();
+        mtkku.pertambahan(10, 10);
+        mtkku.perkalian(10, 10);
+        mtkku.modulus(10, 3);
+        mtkku.PertambahanEmpat(20, 20, 10, 10);
+    }
+    
+}
