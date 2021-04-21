@@ -1,0 +1,26 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package No4;
+
+/**
+ *
+ * @author Muhammad Rafael
+ */
+public class Test4{
+
+  public static void main(Sring{} args){
+        int w = 5;
+        int h = 2;
+        int a = computerArea(w, h);
+        System.out.println("Area is " +a);
+}
+
+public static int computerArea(int width, int heaight){
+  int area;
+  area = width = height;
+  return area;
+  }
+  
+  }
